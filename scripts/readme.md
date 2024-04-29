@@ -1,6 +1,6 @@
 ### Github repository for 
 
-## Data analyses dataset jki_seq1 (16S rRNA gene amplicon sequencing)
+## Analyses of dataset jki_seq1 (16S rRNA gene amplicon sequencing)
 
 #### Color code
 - Rotations
@@ -17,8 +17,21 @@
   - ![#DEB3AD](https://placehold.co/15x15/DEB3AD/DEB3AD.png) `#DEB3AD` (L4)
   - ![#DCC8BA](https://placehold.co/15x15/DCC8BA/DCC8BA.png) `#DCC8BA` (L5)
 
-
-
+### Packages
+library(dada2)\
+library(ShortRead)\
+library(Biostrings)\
+library("phyloseq")\
+library("microbiome")\
+library("vegan")\
+library("DESeq2") \
+library("dplyr")\
+library("stringr")\
+library("ggpubr")\
+library("tidyr")\
+library("ggplot2")\
+library("readxl")\
+library("RColorBrewer")
   
 ### 1. Dada2
 This script uses the raw data obtained from the BioProject SRA.\
@@ -50,11 +63,14 @@ This script removes unwanted taxonomic groups from the dataset.
 This script selects group of samples to be analyzed separetely.
 
 ### 6. Rarefaction
-This script performes rarefaction based on the minimum sequences.
+This script performs rarefaction based on the minimum sequences.
 
 ### 7. Alpha diversity
 This script calculates alpha diversity based on the rarefied data.
 
 ### 8. Ordination 
 This scripts creates MDS plots and calculates PERMANOVA and ANOSIM.
+
+### 9. DESeq2
+This script performs differential abundance (DA) between two groups.
 
