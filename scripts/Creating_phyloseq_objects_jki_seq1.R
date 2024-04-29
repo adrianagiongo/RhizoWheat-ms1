@@ -1,7 +1,4 @@
-#Transform dataset to phyloseq format
-
-#Clear R's brain
-rm(list = ls())
+##Transform dataset processed in dada2 in to a phyloseq format
 
 #load libraries
 library("phyloseq")
@@ -10,9 +7,9 @@ library("readxl")
 library("dplyr")
 
 #move excel files to R objects and metadata on .csv format with names on row 1. 
-otu_mat<-read_excel("~/Documents/R_analysis/jki_seq1/data_jki_seq1/JKI_seq1_otu.xlsx")
-taxo_mat<-read_excel("~/Documents/R_analysis/jki_seq1/data_jki_seq1/JKI_seq1_taxa.xlsx")
-metadata<-read.csv("~/Documents/R_analysis/jki_seq1/data_jki_seq1/JKI_seq1_metadata.csv", row.names = 1)
+otu_mat<-read_excel("~/path/JKI_seq1_otu.xlsx")
+taxo_mat<-read_excel("~/path/JKI_seq1_taxa.xlsx")
+metadata<-read.csv("~/path/JKI_seq1_metadata.csv", row.names = 1)
 
 #define the row names from the otu column under header "OTU"
 #remove the column otu from otu, taxo and metadata tables since it is now used as a row name
@@ -41,5 +38,5 @@ sample_names(jki_seq1_data)
 rank_names(jki_seq1_data)
 sample_variables(jki_seq1_data)
 
-#go through the next scripts ("Rename_NA_taxa.R")
-
+# The end, have fun!
+# Take a walk, then go to the next script!
