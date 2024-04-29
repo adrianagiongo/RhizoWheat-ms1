@@ -56,7 +56,7 @@ prevdf = apply(X = otu_table(psO_jki_seq1),
 prevdf = data.frame(Prevalence=prevdf, TotalAbundance = taxa_sums(psO_jki_seq1), tax_table(psO_jki_seq1), otu_table(psO_jki_seq1))
 
 #Write data frame in csv format
-write.csv(prevdf, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/prevdf_psO_jki_seq1.csv")
+write.csv(prevdf, "~/path/output_jki_seq1/Tables_jki_seq1/prevdf_psO_jki_seq1.csv")
 
 #go through the next scripts ("Data_selection.R")
 
