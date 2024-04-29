@@ -18,9 +18,9 @@
   - ![#DCC8BA](https://placehold.co/15x15/DCC8BA/DCC8BA.png) `#DCC8BA` (L5)
 
 ### Packages
-library(dada2)\
-library(ShortRead)\
-library(Biostrings)\
+library("dada2")\
+library("ShortRead")\
+library("Biostrings")\
 library("phyloseq")\
 library("microbiome")\
 library("vegan")\
