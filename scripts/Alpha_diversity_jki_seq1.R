@@ -44,7 +44,7 @@ psO_jki_seq1_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_rarefied_2$pielou
 psO_jki_seq1_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_rarefied_3$shannon
 
 head(psO_jki_seq1_rarefied.meta)
-write.csv(psO_jki_seq1_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_rarefied_meta.csv")
+write.csv(psO_jki_seq1_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_rarefied_meta.csv")
 
 ##check for the distribution of the diversity using "hist" function to plot, 
 #"shapiro.test" function to test the Null hypothesis, and "qqnorm" function to qq plot
@@ -89,7 +89,7 @@ violin_plot_psO_jki_seq1_rarefied_diversity_rotation <- ggviolin(psO_jki_seq1_ra
   #stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 10, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 10, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_rarefied.meta, x="Rotation", y= "chao1", ylab = "Chao1 index", xlab = "") +
   geom_jitter(aes(color=Rotation), width=0.1, size = 3.5) +
@@ -107,7 +107,7 @@ violin_plot_psO_jki_seq1_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_rar
   #stat_compare_means(method = "wilcox", label= "p", label.y = 4300, size=6)
 violin_plot_psO_jki_seq1_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 10, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 10, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_rarefied.meta, x="Rotation", y= "pielou", ylab = "Pielou index", xlab = "") +
   geom_jitter(aes(color=Rotation), width=0.1, size = 3.5) +
@@ -125,7 +125,7 @@ violin_plot_psO_jki_seq1_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_rar
   #stat_compare_means(method = "wilcox", label= "p", label.y = 0.97, size=6)
 violin_plot_psO_jki_seq1_rarefied_evenness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_rarefied_evenness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 10, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_rarefied_evenness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 10, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 #######################################     For each Rotation groups
@@ -174,7 +174,7 @@ psO_jki_seq1_WR_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_WR_filt_raref
 psO_jki_seq1_WR_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_WR_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_WR_filt_rarefied.meta)
-write.csv(psO_jki_seq1_WR_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_WR_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_WR_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_WR_filt_rarefied_meta.csv")
 
 #for WM
 psO_jki_seq1_WM_filt_rarefied.meta$observed <- alfa_div_psO_jki_seq1_WM_filt_rarefied_1$observed
@@ -183,7 +183,7 @@ psO_jki_seq1_WM_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_WM_filt_raref
 psO_jki_seq1_WM_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_WM_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_WM_filt_rarefied.meta)
-write.csv(psO_jki_seq1_WM_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_WM_filt_rarefied.csv")
+write.csv(psO_jki_seq1_WM_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_WM_filt_rarefied.csv")
 
 ########## Compare layers in rotations
 #Select variable of comparison
@@ -217,7 +217,7 @@ violin_plot_psO_jki_seq1_WR_rarefied_diversity_layer <- ggviolin(psO_jki_seq1_WR
   stat_compare_means(comparisons = alfa_div_comparison_layer_WR_shannon, method = "wilcox", symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns")), bracket.size = .3, size=5, label.y = c(8.5,8.8,9.1), vjust = 0.8)
 violin_plot_psO_jki_seq1_WR_rarefied_diversity_layer
 
-ggsave("violin_plot_psO_jki_seq1_WR_rarefied_diversity_layer.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 8, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_WR_rarefied_diversity_layer.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 8, height = 12, units = "cm", dpi = 300, device = "png")
 
 #to compare layers from WM
 violin_plot_psO_jki_seq1_WM_rarefied_diversity_layer <- ggviolin(psO_jki_seq1_WM_filt_rarefied.meta, x="Layer", y= "shannon", ylab = "Shannon index", xlab = "", title = "WM") +
@@ -238,7 +238,7 @@ violin_plot_psO_jki_seq1_WM_rarefied_diversity_layer <- ggviolin(psO_jki_seq1_WM
   stat_compare_means(comparisons = alfa_div_comparison_layer_WM_shannon, method = "wilcox", symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns")), bracket.size = .3, size=5, label.y = c(8.5,8.8,9.1), vjust = 0.8)
 violin_plot_psO_jki_seq1_WM_rarefied_diversity_layer
 
-ggsave("violin_plot_psO_jki_seq1_WM_rarefied_diversity_layer.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 8, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_WM_rarefied_diversity_layer.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 8, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 violin_plot_psO_jki_seq1_WR_rarefied_richness_layer <- ggviolin(psO_jki_seq1_WR_filt_rarefied.meta, x="Layer", y= "chao1", ylab = "Chao1 index", xlab = "", title = "WR") +
@@ -259,7 +259,7 @@ violin_plot_psO_jki_seq1_WR_rarefied_richness_layer <- ggviolin(psO_jki_seq1_WR_
   stat_compare_means(comparisons = alfa_div_comparison_layer_WR_chao1, method = "wilcox", symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns")), bracket.size = .3, size=5, label.y = c(4400, 4550), vjust = 0.8)
 violin_plot_psO_jki_seq1_WR_rarefied_richness_layer
 
-ggsave("violin_plot_psO_jki_seq1_WR_rarefied_richness_layer.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 8, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_WR_rarefied_richness_layer.png", path = "~/path/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 8, height = 12, units = "cm", dpi = 300, device = "png")
 
 #to compare layers from WM
 violin_plot_psO_jki_seq1_WM_rarefied_richness_layer <- ggviolin(psO_jki_seq1_WM_filt_rarefied.meta, x="Layer", y= "chao1", ylab = "Chao1 index", xlab = "", title = "WM") +
@@ -280,7 +280,7 @@ violin_plot_psO_jki_seq1_WM_rarefied_richness_layer <- ggviolin(psO_jki_seq1_WM_
   stat_compare_means(comparisons = alfa_div_comparison_layer_WM_chao1, method = "wilcox", symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns")), bracket.size = .3, size=5, label.y = c(4000,4150, 4300, 4450, 4600,4750,4900, 5050), vjust = 0.8)
 violin_plot_psO_jki_seq1_WM_rarefied_richness_layer 
 
-ggsave("violin_plot_psO_jki_seq1_WM_rarefied_richness_layer.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 8, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_WM_rarefied_richness_layer.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 8, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 
@@ -312,7 +312,7 @@ violin_plot_psO_jki_seq1_WR_rarefied_diversity_microhabitat <- ggviolin(psO_jki_
   stat_compare_means(comparisons = alfa_div_comparison_microhabitat_WR, method = "wilcox", symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns")), bracket.size = .3, size=5, label.y = c(8,8.5), vjust = 0.8) 
 violin_plot_psO_jki_seq1_WR_rarefied_diversity_microhabitat
 
-ggsave("violin_plot_psO_jki_seq1_WR_rarefied_diversity_microhabitat.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_WR_rarefied_diversity_microhabitat.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 violin_plot_psO_jki_seq1_WM_rarefied_diversity_microhabitat <- ggviolin(psO_jki_seq1_WM_filt_rarefied.meta, x="Microhabitat", y= "shannon", ylab = "Shannon index", xlab = "", title = "WM") +
@@ -332,7 +332,7 @@ violin_plot_psO_jki_seq1_WM_rarefied_diversity_microhabitat <- ggviolin(psO_jki_
   stat_compare_means(comparisons = alfa_div_comparison_microhabitat_WM, method = "wilcox", symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns")), bracket.size = .3, size=5, label.y = c(8,8.5), vjust = 0.8) 
 violin_plot_psO_jki_seq1_WM_rarefied_diversity_microhabitat
 
-ggsave("violin_plot_psO_jki_seq1_WM_rarefied_diversity_microhabitat.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_WM_rarefied_diversity_microhabitat.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 
@@ -392,7 +392,7 @@ psO_jki_seq1_RA_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_RA_filt_raref
 psO_jki_seq1_RA_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_RA_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_RA_filt_rarefied.meta)
-write.csv(psO_jki_seq1_RA_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_RA_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_RA_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_RA_filt_rarefied_meta.csv")
 
 #for RH
 psO_jki_seq1_RH_filt_rarefied.meta$observed <- alfa_div_psO_jki_seq1_RH_filt_rarefied_1$observed
@@ -401,7 +401,7 @@ psO_jki_seq1_RH_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_RH_filt_raref
 psO_jki_seq1_RH_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_RH_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_RH_filt_rarefied.meta)
-write.csv(psO_jki_seq1_RH_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_RH_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_RH_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_RH_filt_rarefied_meta.csv")
 
 #for RP
 psO_jki_seq1_RP_filt_rarefied.meta$observed <- alfa_div_psO_jki_seq1_RP_filt_rarefied_1$observed
@@ -410,7 +410,7 @@ psO_jki_seq1_RP_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_RP_filt_raref
 psO_jki_seq1_RP_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_RP_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_RP_filt_rarefied.meta)
-write.csv(psO_jki_seq1_RP_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_RP_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_RP_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_RP_filt_rarefied_meta.csv")
 
 ###plot using ggviolin
 ##test Wilcoxon
@@ -431,7 +431,7 @@ violin_plot_psO_jki_seq1_RA_filt_rarefied_diversity_rotation <- ggviolin(psO_jki
   stat_compare_means(method = "wilcox", label= "p", label.y = 7.9, size=6)
 violin_plot_psO_jki_seq1_RA_filt_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RA_filt_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RA_filt_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_RA_filt_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_RA_filt_rarefied.meta, x="Rotation", y= "chao1", ylab = "Chao1 index", xlab = "", title = "RA") +
   geom_jitter(aes(color=Rotation), width=0.1, size = 3.5) +
@@ -448,7 +448,7 @@ violin_plot_psO_jki_seq1_RA_filt_rarefied_richness_rotation <- ggviolin(psO_jki_
 stat_compare_means(method = "wilcox", label= "p", label.y = 4000, size=6)
 violin_plot_psO_jki_seq1_RA_filt_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RA_filt_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RA_filt_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_RA_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_RA_filt_rarefied.meta, x="Rotation", y= "pielou", ylab = "Pielou index", xlab = "", title = "RA") +
   geom_jitter(aes(color=Rotation), width=0.1, size = 3.5) +
@@ -465,7 +465,7 @@ violin_plot_psO_jki_seq1_RA_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_
   stat_compare_means(method = "wilcox", label= "p", label.y = 0.97, size=6)
 violin_plot_psO_jki_seq1_RA_filt_rarefied_evenness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RA_filt_rarefied_evenness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RA_filt_rarefied_evenness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_RH_filt_rarefied_diversity_rotation <- ggviolin(psO_jki_seq1_RH_filt_rarefied.meta, x="Rotation", y= "shannon", ylab = "", xlab = "", title = "RH") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -482,7 +482,7 @@ violin_plot_psO_jki_seq1_RH_filt_rarefied_diversity_rotation <- ggviolin(psO_jki
 #stat_compare_means(method = "wilcox", label= "p", label.y = 7.9, size=6)
 violin_plot_psO_jki_seq1_RH_filt_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RH_filt_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RH_filt_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_RH_filt_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_RH_filt_rarefied.meta, x="Rotation", y= "chao1", ylab = "Chao1 index", xlab = "", title = "RH") +
   geom_jitter(aes(color=Rotation), width=0.1, size = 3.5) +
@@ -499,7 +499,7 @@ violin_plot_psO_jki_seq1_RH_filt_rarefied_richness_rotation <- ggviolin(psO_jki_
 #stat_compare_means(method = "wilcox", label= "p", label.y = 4000, size=6)
 violin_plot_psO_jki_seq1_RH_filt_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RH_filt_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RH_filt_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_RH_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_RH_filt_rarefied.meta, x="Rotation", y= "pielou", ylab = "Pielou index", xlab = "", title = "RH") +
   geom_jitter(aes(color=Rotation), width=0.1, size = 3.5) +
@@ -516,7 +516,7 @@ violin_plot_psO_jki_seq1_RH_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_
 #stat_compare_means(method = "wilcox", label= "p", label.y = 0.97, size=6)
 violin_plot_psO_jki_seq1_RH_filt_rarefied_evenness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RH_filt_rarefied_evenness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RH_filt_rarefied_evenness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_RP_filt_rarefied_diversity_rotation <- ggviolin(psO_jki_seq1_RP_filt_rarefied.meta, x="Rotation", y= "shannon", ylab = "", xlab = "", title = "RP") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -533,7 +533,7 @@ violin_plot_psO_jki_seq1_RP_filt_rarefied_diversity_rotation <- ggviolin(psO_jki
 #stat_compare_means(method = "wilcox", label= "p", label.y = 7.9, size=6)
 violin_plot_psO_jki_seq1_RP_filt_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RP_filt_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RP_filt_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_RP_filt_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_RP_filt_rarefied.meta, x="Rotation", y= "chao1", ylab = "Chao1 index", xlab = "", title = "RP") +
   geom_jitter(aes(color=Rotation), width=0.1, size = 3.5) +
@@ -550,7 +550,7 @@ violin_plot_psO_jki_seq1_RP_filt_rarefied_richness_rotation <- ggviolin(psO_jki_
 #stat_compare_means(method = "wilcox", label= "p", label.y = 4000, size=6)
 violin_plot_psO_jki_seq1_RP_filt_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RP_filt_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RP_filt_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_RP_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_RP_filt_rarefied.meta, x="Rotation", y= "pielou", ylab = "Pielou index", xlab = "", title = "RP") +
   geom_jitter(aes(color=Rotation), width=0.1, size = 3.5) +
@@ -567,7 +567,7 @@ violin_plot_psO_jki_seq1_RP_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_
 #stat_compare_means(method = "wilcox", label= "p", label.y = 0.97, size=6)
 violin_plot_psO_jki_seq1_RP_filt_rarefied_evenness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_RP_filt_rarefied_evenness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_RP_filt_rarefied_evenness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 
@@ -647,7 +647,7 @@ psO_jki_seq1_layer1_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_layer1_fi
 psO_jki_seq1_layer1_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_layer1_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_layer1_filt_rarefied.meta)
-write.csv(psO_jki_seq1_layer1_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer1_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_layer1_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer1_filt_rarefied_meta.csv")
 
 psO_jki_seq1_layer2_filt_rarefied.meta$observed <- alfa_div_psO_jki_seq1_layer2_filt_rarefied_1$observed
 psO_jki_seq1_layer2_filt_rarefied.meta$chao1 <- alfa_div_psO_jki_seq1_layer2_filt_rarefied_1$chao1
@@ -655,7 +655,7 @@ psO_jki_seq1_layer2_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_layer2_fi
 psO_jki_seq1_layer2_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_layer2_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_layer2_filt_rarefied.meta)
-write.csv(psO_jki_seq1_layer2_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer2_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_layer2_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer2_filt_rarefied_meta.csv")
 
 psO_jki_seq1_layer3_filt_rarefied.meta$observed <- alfa_div_psO_jki_seq1_layer3_filt_rarefied_1$observed
 psO_jki_seq1_layer3_filt_rarefied.meta$chao1 <- alfa_div_psO_jki_seq1_layer3_filt_rarefied_1$chao1
@@ -663,7 +663,7 @@ psO_jki_seq1_layer3_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_layer3_fi
 psO_jki_seq1_layer3_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_layer3_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_layer3_filt_rarefied.meta)
-write.csv(psO_jki_seq1_layer3_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer3_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_layer3_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer3_filt_rarefied_meta.csv")
 
 psO_jki_seq1_layer4_filt_rarefied.meta$observed <- alfa_div_psO_jki_seq1_layer4_filt_rarefied_1$observed
 psO_jki_seq1_layer4_filt_rarefied.meta$chao1 <- alfa_div_psO_jki_seq1_layer4_filt_rarefied_1$chao1
@@ -671,7 +671,7 @@ psO_jki_seq1_layer4_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_layer4_fi
 psO_jki_seq1_layer4_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_layer4_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_layer4_filt_rarefied.meta)
-write.csv(psO_jki_seq1_layer4_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer4_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_layer4_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer4_filt_rarefied_meta.csv")
 
 psO_jki_seq1_layer5_filt_rarefied.meta$observed <- alfa_div_psO_jki_seq1_layer5_filt_rarefied_1$observed
 psO_jki_seq1_layer5_filt_rarefied.meta$chao1 <- alfa_div_psO_jki_seq1_layer5_filt_rarefied_1$chao1
@@ -679,7 +679,7 @@ psO_jki_seq1_layer5_filt_rarefied.meta$pielou <- alfa_div_psO_jki_seq1_layer5_fi
 psO_jki_seq1_layer5_filt_rarefied.meta$shannon <- alfa_div_psO_jki_seq1_layer5_filt_rarefied_3$shannon
 
 head(psO_jki_seq1_layer5_filt_rarefied.meta)
-write.csv(psO_jki_seq1_layer5_filt_rarefied.meta, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer5_filt_rarefied_meta.csv")
+write.csv(psO_jki_seq1_layer5_filt_rarefied.meta, "~/path/output_jki_seq1/Tables_jki_seq1/alpha_div_psO_jki_seq1_layer5_filt_rarefied_meta.csv")
 
 
 ###plot using ggviolin
@@ -702,7 +702,7 @@ violin_plot_psO_jki_seq1_layer1_filt_rarefied_diversity_rotation <- ggviolin(psO
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer1_filt_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer1_filt_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer1_filt_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer2_filt_rarefied_diversity_rotation <- ggviolin(psO_jki_seq1_layer2_filt_rarefied.meta, x="Rotation", y= "shannon", ylab = "", xlab = "", title = "L2") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -720,7 +720,7 @@ violin_plot_psO_jki_seq1_layer2_filt_rarefied_diversity_rotation <- ggviolin(psO
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer2_filt_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer2_filt_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer2_filt_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer3_filt_rarefied_diversity_rotation <- ggviolin(psO_jki_seq1_layer3_filt_rarefied.meta, x="Rotation", y= "shannon", ylab = "", xlab = "", title = "L3") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -738,7 +738,7 @@ violin_plot_psO_jki_seq1_layer3_filt_rarefied_diversity_rotation <- ggviolin(psO
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer3_filt_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer3_filt_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer3_filt_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer4_filt_rarefied_diversity_rotation <- ggviolin(psO_jki_seq1_layer4_filt_rarefied.meta, x="Rotation", y= "shannon", ylab = "", xlab = "", title = "L4") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -756,7 +756,7 @@ violin_plot_psO_jki_seq1_layer4_filt_rarefied_diversity_rotation <- ggviolin(psO
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer4_filt_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer4_filt_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png" )
+ggsave("violin_plot_psO_jki_seq1_layer4_filt_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png" )
 
 violin_plot_psO_jki_seq1_layer5_filt_rarefied_diversity_rotation <- ggviolin(psO_jki_seq1_layer5_filt_rarefied.meta, x="Rotation", y= "shannon", ylab = "", xlab = "", title = "L5") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -774,7 +774,7 @@ violin_plot_psO_jki_seq1_layer5_filt_rarefied_diversity_rotation <- ggviolin(psO
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer5_filt_rarefied_diversity_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer5_filt_rarefied_diversity_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer5_filt_rarefied_diversity_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 
@@ -796,7 +796,7 @@ violin_plot_psO_jki_seq1_layer1_filt_rarefied_richness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer1_filt_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer1_filt_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer1_filt_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer2_filt_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_layer2_filt_rarefied.meta, x="Rotation", y= "chao1", ylab = "", xlab = "", title = "L2") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -814,7 +814,7 @@ violin_plot_psO_jki_seq1_layer2_filt_rarefied_richness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer2_filt_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer2_filt_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer2_filt_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer3_filt_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_layer3_filt_rarefied.meta, x="Rotation", y= "chao1", ylab = "", xlab = "", title = "L3") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -832,7 +832,7 @@ violin_plot_psO_jki_seq1_layer3_filt_rarefied_richness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer3_filt_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer3_filt_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer3_filt_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer4_filt_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_layer4_filt_rarefied.meta, x="Rotation", y= "chao1", ylab = "", xlab = "", title = "L4") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -850,7 +850,7 @@ violin_plot_psO_jki_seq1_layer4_filt_rarefied_richness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer4_filt_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer4_filt_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png" )
+ggsave("violin_plot_psO_jki_seq1_layer4_filt_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png" )
 
 violin_plot_psO_jki_seq1_layer5_filt_rarefied_richness_rotation <- ggviolin(psO_jki_seq1_layer5_filt_rarefied.meta, x="Rotation", y= "chao1", ylab = "", xlab = "", title = "L5") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -868,7 +868,7 @@ violin_plot_psO_jki_seq1_layer5_filt_rarefied_richness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer5_filt_rarefied_richness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer5_filt_rarefied_richness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer5_filt_rarefied_richness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 
@@ -890,7 +890,7 @@ violin_plot_psO_jki_seq1_layer1_filt_rarefied_evenness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer1_filt_rarefied_evenness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer1_filt_rarefied_evenness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer1_filt_rarefied_evenness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer2_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_layer2_filt_rarefied.meta, x="Rotation", y= "pielou", ylab = "", xlab = "", title = "L2") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -908,7 +908,7 @@ violin_plot_psO_jki_seq1_layer2_filt_rarefied_evenness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer2_filt_rarefied_evenness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer2_filt_rarefied_evenness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer2_filt_rarefied_evenness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer3_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_layer3_filt_rarefied.meta, x="Rotation", y= "chao1", ylab = "", xlab = "", title = "L3") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -926,7 +926,7 @@ violin_plot_psO_jki_seq1_layer3_filt_rarefied_evenness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer3_filt_rarefied_evenness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer3_filt_rarefied_evenness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("violin_plot_psO_jki_seq1_layer3_filt_rarefied_evenness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png")
 
 violin_plot_psO_jki_seq1_layer4_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_layer4_filt_rarefied.meta, x="Rotation", y= "pielou", ylab = "", xlab = "", title = "L4") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
@@ -944,7 +944,7 @@ violin_plot_psO_jki_seq1_layer4_filt_rarefied_evenness_rotation <- ggviolin(psO_
   stat_compare_means(method = "wilcox", label= "p", label.y = 6.9, size=6)
 violin_plot_psO_jki_seq1_layer4_filt_rarefied_evenness_rotation
 
-ggsave("violin_plot_psO_jki_seq1_layer4_filt_rarefied_evenness_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png" )
+ggsave("violin_plot_psO_jki_seq1_layer4_filt_rarefied_evenness_rotation.png", path = "~/path/output_jki_seq1/Alpha_div_jki_seq1/", width = 11, height = 12, units = "cm", dpi = 300, device = "png" )
 
 violin_plot_psO_jki_seq1_layer5_filt_rarefied_evenness_rotation <- ggviolin(psO_jki_seq1_layer5_filt_rarefied.meta, x="Rotation", y= "pielou", ylab = "", xlab = "", title = "L5") +
   geom_jitter(aes(color=Rotation),width=0.1, size = 3.5) +
