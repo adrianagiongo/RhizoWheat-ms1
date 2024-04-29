@@ -27,10 +27,10 @@ psO_jki_seq1_WM_filt
 ####Create tables
 
 df_psO_jki_seq1_WR_filt <- data.frame(tax_table(psO_jki_seq1_WR_filt),otu_table(psO_jki_seq1_WR_filt))
-write.csv(df_psO_jki_seq1_WR_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt.csv")
+write.csv(df_psO_jki_seq1_WR_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt.csv")
 
 df_psO_jki_seq1_WM_filt <- data.frame(tax_table(psO_jki_seq1_WM_filt),otu_table(psO_jki_seq1_WM_filt))
-write.csv(df_psO_jki_seq1_WM_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt.csv")
+write.csv(df_psO_jki_seq1_WM_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt.csv")
 
 ###Agglomerating taxa per sample at the appropriated taxonomic rank
 ##Using tax_glom()
@@ -57,10 +57,10 @@ head(otu_table(psO_jki_seq1_WM_filt_annotation_rel))
 ###Create tables
 
 df_psO_jki_seq1_WR_filt_annotation_rel <- data.frame(tax_table(psO_jki_seq1_WR_filt_annotation_rel),otu_table(psO_jki_seq1_WR_filt_annotation_rel))
-write.csv(df_psO_jki_seq1_WR_filt_annotation_rel, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt_annotation_rel1.csv")
+write.csv(df_psO_jki_seq1_WR_filt_annotation_rel, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt_annotation_rel1.csv")
 
 df_psO_jki_seq1_WM_filt_annotation_rel <- data.frame(tax_table(psO_jki_seq1_WM_filt_annotation_rel),otu_table(psO_jki_seq1_WM_filt_annotation_rel))
-write.csv(df_psO_jki_seq1_WM_filt_annotation_rel, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt_annotation_rel1.csv")
+write.csv(df_psO_jki_seq1_WM_filt_annotation_rel, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt_annotation_rel1.csv")
 
 ################################################################
 ##Using subset_samples() subset Rotation data by Microhabitat to compare layers
@@ -99,18 +99,18 @@ psO_jki_seq1_WM_filt_RP_filt
 #### Create tables
 
 df_psO_jki_seq1_WR_filt_RA_filt <- data.frame(tax_table(psO_jki_seq1_WR_filt_RA_filt),otu_table(psO_jki_seq1_WR_filt_RA_filt))
-write.csv(df_psO_jki_seq1_WR_filt_RA_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt_RA_filt.csv")
+write.csv(df_psO_jki_seq1_WR_filt_RA_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt_RA_filt.csv")
 df_psO_jki_seq1_WR_filt_RH_filt <- data.frame(tax_table(psO_jki_seq1_WR_filt_RH_filt),otu_table(psO_jki_seq1_WR_filt_RH_filt))
-write.csv(df_psO_jki_seq1_WR_filt_RH_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt_RH_filt.csv")
+write.csv(df_psO_jki_seq1_WR_filt_RH_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt_RH_filt.csv")
 df_psO_jki_seq1_WR_filt_RP_filt <- data.frame(tax_table(psO_jki_seq1_WR_filt_RP_filt),otu_table(psO_jki_seq1_WR_filt_RP_filt))
-write.csv(df_psO_jki_seq1_WR_filt_RP_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt_RP_filt.csv")
+write.csv(df_psO_jki_seq1_WR_filt_RP_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WR_filt_RP_filt.csv")
 
 df_psO_jki_seq1_WM_filt_RA_filt <- data.frame(tax_table(psO_jki_seq1_WM_filt_RA_filt),otu_table(psO_jki_seq1_WM_filt_RA_filt))
-write.csv(df_psO_jki_seq1_WM_filt_RA_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt_RA_filt.csv")
+write.csv(df_psO_jki_seq1_WM_filt_RA_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt_RA_filt.csv")
 df_psO_jki_seq1_WM_filt_RH_filt <- data.frame(tax_table(psO_jki_seq1_WM_filt_RH_filt),otu_table(psO_jki_seq1_WM_filt_RH_filt))
-write.csv(df_psO_jki_seq1_WM_filt_RH_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt_RH_filt.csv")
+write.csv(df_psO_jki_seq1_WM_filt_RH_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt_RH_filt.csv")
 df_psO_jki_seq1_WM_filt_RP_filt <- data.frame(tax_table(psO_jki_seq1_WM_filt_RP_filt),otu_table(psO_jki_seq1_WM_filt_RP_filt))
-write.csv(df_psO_jki_seq1_WM_filt_RP_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt_RP_filt.csv")
+write.csv(df_psO_jki_seq1_WM_filt_RP_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_WM_filt_RP_filt.csv")
 
 ###############################################################
 ###Sub-setting samples from cleaned dataset to keep only samples that represent every case on the variable  
@@ -142,13 +142,13 @@ psO_jki_seq1_RP_filt
 #### Create tables 
 
 df_psO_jki_seq1_RA_filt <- data.frame(tax_table(psO_jki_seq1_RA_filt),otu_table(psO_jki_seq1_RA_filt))
-write.csv(df_psO_jki_seq1_RA_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RA_filt.csv")
+write.csv(df_psO_jki_seq1_RA_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RA_filt.csv")
 
 df_psO_jki_seq1_RH_filt <- data.frame(tax_table(psO_jki_seq1_RH_filt),otu_table(psO_jki_seq1_RH_filt))
-write.csv(df_psO_jki_seq1_RH_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RH_filt.csv")
+write.csv(df_psO_jki_seq1_RH_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RH_filt.csv")
 
 df_psO_jki_seq1_RP_filt <- data.frame(tax_table(psO_jki_seq1_RP_filt),otu_table(psO_jki_seq1_RP_filt))
-write.csv(df_psO_jki_seq1_RP_filt, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RP_filt.csv")
+write.csv(df_psO_jki_seq1_RP_filt, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RP_filt.csv")
 
 ###Agglomerating taxa per sample at the appropriated taxonomic rank
 ##Using tax_glom()
@@ -183,13 +183,13 @@ head(otu_table(psO_jki_seq1_RP_filt_annotation_rel))
 ####Create tables 
 
 df_psO_jki_seq1_RA_filt_annotation_rel <- data.frame(tax_table(psO_jki_seq1_RA_filt_annotation_rel),otu_table(psO_jki_seq1_RA_filt_annotation_rel))
-write.csv(df_psO_jki_seq1_RA_filt_annotation_rel, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RA_filt_annotation_rel1.csv")
+write.csv(df_psO_jki_seq1_RA_filt_annotation_rel, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RA_filt_annotation_rel1.csv")
 
 df_psO_jki_seq1_RH_filt_annotation_rel <- data.frame(tax_table(psO_jki_seq1_RH_filt_annotation_rel),otu_table(psO_jki_seq1_RH_filt_annotation_rel))
-write.csv(df_psO_jki_seq1_RH_filt_annotation_rel, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RH_filt_annotation_rel1.csv")
+write.csv(df_psO_jki_seq1_RH_filt_annotation_rel, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RH_filt_annotation_rel1.csv")
 
 df_psO_jki_seq1_RP_filt_annotation_rel <- data.frame(tax_table(psO_jki_seq1_RP_filt_annotation_rel),otu_table(psO_jki_seq1_RP_filt_annotation_rel))
-write.csv(df_psO_jki_seq1_RP_filt_annotation_rel, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RP_filt_annotation_rel1.csv")
+write.csv(df_psO_jki_seq1_RP_filt_annotation_rel, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_RP_filt_annotation_rel1.csv")
 
 #############################################################################
 ###Sub-setting samples from cleaned dataset to keep only samples that represent every case on the variable  
