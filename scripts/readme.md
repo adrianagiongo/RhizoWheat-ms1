@@ -1,6 +1,7 @@
 ### Github repository for 
 
-## Analyses of dataset jki_seq1 (16S rRNA gene amplicon sequencing)
+## Dataset jki_seq1 (16S rRNA gene amplicon sequencing) pipeline analyses
+Performed in R v.4.1.3 [R Core Team](https://www.r-project.org)
 
 #### Color code
 - Rotations
