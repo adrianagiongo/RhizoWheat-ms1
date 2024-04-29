@@ -42,9 +42,6 @@ Database used: [SILVA 138 SSU](https://www.arb-silva.de/documentation/release-13
 This script creates phyloseq object based on these files:
 
 - jki_seq1_metadata.csv
-  - same order of samples
-  - columns with "_"
-
 - jki_seq1_otu.xlsx
 - jki_seq1_seqs.xlsx
 - jki_seq1_taxa.xlsx
