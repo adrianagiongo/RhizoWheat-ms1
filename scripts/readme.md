@@ -40,7 +40,7 @@ A R server is required. \
 Database used: [SILVA 138 SSU](https://www.arb-silva.de/documentation/release-138/) 
 
 ### 2. Creating phyloseq object
-This script creates phyloseq object based on these files:
+This script creates a phyloseq object based on these files:
 
 - jki_seq1_metadata.csv
 - jki_seq1_otu.xlsx
@@ -48,17 +48,17 @@ This script creates phyloseq object based on these files:
 - jki_seq1_taxa.xlsx
 
 ### 3. Rename NA
-This script replace NA for the latest taxonomy found for an ASV.
+This script replaces NA for the latest taxonomy found for an ASV.
 
 ### 4. Clean dataset
 This script removes unwanted taxonomic groups from the dataset.
 - Root NAs (Domain, Phylum)
 - Eukaryotes (Domain)
-- Cloroplasts (Order)
+- Chloroplasts (Order)
 - Mitochondria (Family)
 
 ### 5. Data selection
-This script selects group of samples to be analyzed separetely.
+This script selects a group of samples to be analyzed separately.
 
 ### 6. Rarefaction
 This script performs rarefaction based on the minimum sequences.
@@ -67,8 +67,7 @@ This script performs rarefaction based on the minimum sequences.
 This script calculates alpha diversity based on the rarefied data.
 
 ### 8. Ordination 
-This scripts creates MDS plots and calculates PERMANOVA and ANOSIM.
+This script creates MDS plots and calculates PERMANOVA and ANOSIM based on the rarefied data.
 
 ### 9. DESeq2
-This script performs differential abundance (DA) between two groups.
-
+Based on the rarefied data, this script performs differential abundance (DA) between two groups.
