@@ -52,7 +52,8 @@ This script creates a phyloseq object based on these files:
 - jki_seq1_taxa.xlsx
 
 ### 3. Rename NA
-This script replaces NA for the latest taxonomy found for an ASV.
+This script replaces NA for the latest taxonomy found for an ASV.\
+Source = joey711/phyloseq#850
 
 ### 4. Clean dataset
 This script removes unwanted taxonomic groups from the dataset.
