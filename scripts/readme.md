@@ -61,7 +61,7 @@ This script removes unwanted taxonomic groups from the dataset.
 This script selects a group of samples to be analyzed separately.
 
 ### 6. Rarefaction
-This script performs rarefaction based on the minimum sequences.
+This script performs rarefaction based on the minimum sequences. See Schloss (2024).
 
 ### 7. Alpha diversity
 This script calculates alpha diversity based on the rarefied data.
@@ -71,3 +71,9 @@ This script creates MDS plots and calculates PERMANOVA and ANOSIM based on the r
 
 ### 9. DESeq2
 Based on the rarefied data, this script performs differential abundance (DA) between two groups.
+
+### References
+Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Met. 13:581–583. [DOI](http://10.1101/024034)
+
+Schloss PD (2024) Rarefaction is currently the best approach to control for uneven sequencing effort in amplicon sequence analyses. mSphere 9:e00354-23. [DOI](http://10.1128/msphere.00354-23)
+
