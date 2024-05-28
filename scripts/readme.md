@@ -38,6 +38,10 @@ library("RColorBrewer")
 This script uses the raw data obtained from the BioProject SRA.\
 A R server is required. \
 Database used: [SILVA 138 SSU](https://www.arb-silva.de/documentation/release-138/) 
+- Non-truncate parameter
+```
+out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, compress = TRUE, truncQ = 2, trimLeft=c(17,20), maxN=0, maxEE=c(2,2), rm.phix=TRUE, matchIDs = TRUE, multithread=TRUE)
+```
 
 ### 2. Creating phyloseq object
 This script creates a phyloseq object based on these files:
