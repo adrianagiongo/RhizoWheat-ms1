@@ -16,4 +16,4 @@ Performed in R v.4.1.3 [R Core Team](https://www.r-project.org)
   - Sequences of each ASV
 - Metadata
   - Original name of samples (Sample)
-  - Metadata parameters (Sample_name,	Sample_id,	Core,	Microhabitat,	Rotation,	Replicates,	Layer,	Rotlayer,	Depth_cm,	Group,	C,	N,	Ngkg,	SoilMoisture
+  - Relevant metadata parameters (Sample_name,	Sample_id,	Core,	Microhabitat,	Rotation,	Replicates,	Layer,	Rotlayer,	Depth_cm,	Group,	C,	N,	Ngkg,	SoilMoisture
