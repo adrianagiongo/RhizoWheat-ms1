@@ -31,7 +31,7 @@ plot_MDS_bray_psO_jki_seq1_sqr_rotation<-plot_ordination(psO_jki_seq1,MDS_bray_p
   scale_color_manual(values = c("#196418", "#B1AD31"))
 plot_MDS_bray_psO_jki_seq1_sqr_rotation
 
-ggsave("plot_MDS_bray_psO_jki_seq1_sqr_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Ordination_jki_seq1/", width = 18, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("plot_MDS_bray_psO_jki_seq1_sqr_rotation.png", path = "~/path/Ordination_jki_seq1/", width = 18, height = 12, units = "cm", dpi = 300, device = "png")
 
 ####################################### STATISTICS
 #All
@@ -51,23 +51,23 @@ psO_jki_seq1_meta <- meta(psO_jki_seq1)
 set.seed(2022)
 Permanova_psO_jki_seq1_rotation_model <- adonis2(t(psO_jki_seq1_sqr_abundances) ~Rotation + Microhabitat + Layer, data = psO_jki_seq1_meta, permutations = 10000, method = "bray", by = NULL)
 Permanova_psO_jki_seq1_rotation_model
-write.csv(Permanova_psO_jki_seq1_rotation_model, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_rotation_model.csv")
+write.csv(Permanova_psO_jki_seq1_rotation_model, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_rotation_model.csv")
 
 #by terms (it is default)
 set.seed(2022)
 Permanova_psO_jki_seq1_rotation <- adonis2(t(psO_jki_seq1_sqr_abundances) ~ Rotation, data = psO_jki_seq1_meta, permutations = 10000, method = "bray")
 Permanova_psO_jki_seq1_rotation
-write.csv(Permanova_psO_jki_seq1_rotation, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_rotation.csv")
+write.csv(Permanova_psO_jki_seq1_rotation, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_rotation.csv")
 
 Permanova_psO_jki_seq1_rotation_byterm_all <- adonis2(t(psO_jki_seq1_sqr_abundances) ~Rotation + Microhabitat + Layer, data = psO_jki_seq1_meta, permutations = 10000, method = "bray", by =  "terms")
 Permanova_psO_jki_seq1_rotation_byterm_all
-write.csv(Permanova_psO_jki_seq1_rotation_byterm_all, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_rotation_byterm_all.csv")
+write.csv(Permanova_psO_jki_seq1_rotation_byterm_all, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_rotation_byterm_all.csv")
 
 #by margin
 set.seed(2022)
 Permanova_psO_jki_seq1_rotation_bymargin <- adonis2(t(psO_jki_seq1_sqr_abundances) ~Rotation:Microhabitat:Layer, data = psO_jki_seq1_meta, permutations = 10000, method = "bray", by =  "margin")
 Permanova_psO_jki_seq1_rotation_bymargin
-write.csv(Permanova_psO_jki_seq1_rotation_bymargin, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_rotation_bymargin.csv")
+write.csv(Permanova_psO_jki_seq1_rotation_bymargin, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_rotation_bymargin.csv")
 
 
 ####################################### For each Rotation group
@@ -94,7 +94,7 @@ plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_layer<-plot_ordination(psO_jki_seq1_WR_fi
   scale_color_manual(values = c("#3B0404", "#B95C50", "#DE847B", "#DEB3AD", "#dcc8ba"))
 plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_layer
 
-ggsave("plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_layer.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Ordination_jki_seq1/", width = 13, height = 10, units = "cm",dpi = 300)
+ggsave("plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_layer.png", path = "~/path/Ordination_jki_seq1/", width = 13, height = 10, units = "cm",dpi = 300)
 
 #Microhabitat
 plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_microhabitat<-plot_ordination(psO_jki_seq1_WR_filt,MDS_bray_psO_jki_seq1_WR_filt_sqr, type="sample",color="Microhabitat") +
@@ -108,7 +108,7 @@ plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_microhabitat<-plot_ordination(psO_jki_seq
   scale_color_manual(values = c("#b05644","#d9b967","#57896A"))
 plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_microhabitat
 
-ggsave("plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_microhabitat.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Ordination_jki_seq1/", width = 14, height = 11, units = "cm",dpi = 300)
+ggsave("plot_MDS_bray_psO_jki_seq1_WR_filt_sqr_microhabitat.png", path = "~/path/Ordination_jki_seq1/", width = 14, height = 11, units = "cm",dpi = 300)
 
 #Layer
 plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_layer<-plot_ordination(psO_jki_seq1_WM_filt,MDS_bray_psO_jki_seq1_WM_filt_sqr, type="sample",color="Layer") +
@@ -122,7 +122,7 @@ plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_layer<-plot_ordination(psO_jki_seq1_WM_fi
   scale_color_manual(values = c("#3B0404", "#B95C50", "#DE847B", "#DEB3AD", "#dcc8ba"))
 plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_layer
 
-ggsave("plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_layer.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Ordination_jki_seq1/", width = 13, height = 10, units = "cm",dpi = 300)
+ggsave("plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_layer.png", path = "~/path/Ordination_jki_seq1/", width = 13, height = 10, units = "cm",dpi = 300)
 
 #Microhabitat
 plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_microhabitat<-plot_ordination(psO_jki_seq1_WM_filt,MDS_bray_psO_jki_seq1_WM_filt_sqr, type="sample",color="Microhabitat") +
@@ -136,7 +136,7 @@ plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_microhabitat<-plot_ordination(psO_jki_seq
   scale_color_manual(values = c("#b05644","#d9b967","#57896A"))
 plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_microhabitat
 
-ggsave("plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_microhabitat.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Ordination_jki_seq1/", width = 14, height = 11, units = "cm",dpi = 300)
+ggsave("plot_MDS_bray_psO_jki_seq1_WM_filt_sqr_microhabitat.png", path = "~/path/Ordination_jki_seq1/", width = 14, height = 11, units = "cm",dpi = 300)
 
 ####################################### STATISTICS
 #Rotation
@@ -158,12 +158,12 @@ psO_jki_seq1_WM_filt_meta <- meta(psO_jki_seq1_WM_filt)
 #WR data
 Permanova_psO_jki_seq1_WR_filt_microhabitat <- adonis2(t(psO_jki_seq1_WR_filt_sqr_abundances) ~ Microhabitat + Layer, data = psO_jki_seq1_WR_filt_meta, permutations = 10000, method = "bray")
 Permanova_psO_jki_seq1_WR_filt_microhabitat
-write.csv(Permanova_psO_jki_seq1_WR_filt_microhabitat, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_WR_filt_microhabitat.csv")
+write.csv(Permanova_psO_jki_seq1_WR_filt_microhabitat, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_WR_filt_microhabitat.csv")
 
 ##WM data
 Permanova_psO_jki_seq1_WM_filt_microhabitat <- adonis2(t(psO_jki_seq1_WM_filt_sqr_abundances) ~ Microhabitat + Layer, data = psO_jki_seq1_WM_filt_meta, permutations = 10000, method = "bray")
 Permanova_psO_jki_seq1_WM_filt_microhabitat
-write.csv(Permanova_psO_jki_seq1_WM_filt_microhabitat, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_WM_filt_microhabitat.csv")
+write.csv(Permanova_psO_jki_seq1_WM_filt_microhabitat, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_WM_filt_microhabitat.csv")
 
 
 ####################################### For each Microhabitat group
@@ -192,7 +192,7 @@ plot_MDS_bray_psO_jki_seq1_RA_filt_sqr_rotation<-plot_ordination(psO_jki_seq1_RA
   scale_color_manual(values = c("#196418", "#B1AD31"))
 plot_MDS_bray_psO_jki_seq1_RA_filt_sqr_rotation
 
-ggsave("plot_MDS_bray_psO_jki_seq1_RA_filt_sqr_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Ordination_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
+ggsave("plot_MDS_bray_psO_jki_seq1_RA_filt_sqr_rotation.png", path = "~/path/Ordination_jki_seq1/", width = 12, height = 12, units = "cm", dpi = 300, device = "png")
 
 plot_MDS_bray_psO_jki_seq1_RH_filt_sqr_rotation<-plot_ordination(psO_jki_seq1_RH_filt,MDS_bray_psO_jki_seq1_RH_filt_sqr, type="sample",color="Rotation") +
   theme_bw() +
@@ -205,7 +205,7 @@ plot_MDS_bray_psO_jki_seq1_RH_filt_sqr_rotation<-plot_ordination(psO_jki_seq1_RH
   scale_color_manual(values = c("#196418", "#B1AD31"))
 plot_MDS_bray_psO_jki_seq1_RH_filt_sqr_rotation
 
-ggsave("plot_MDS_bray_psO_jki_seq1_RH_filt_sqr_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Ordination_jki_seq1/", width = 10, height = 10, units = "cm", dpi = 300, device = "png")
+ggsave("plot_MDS_bray_psO_jki_seq1_RH_filt_sqr_rotation.png", path = "~/path/Ordination_jki_seq1/", width = 10, height = 10, units = "cm", dpi = 300, device = "png")
 
 plot_MDS_bray_psO_jki_seq1_RP_filt_sqr_rotation<-plot_ordination(psO_jki_seq1_RP_filt,MDS_bray_psO_jki_seq1_RP_filt_sqr, type="sample",color="Rotation") +
   theme_bw() +
@@ -218,7 +218,7 @@ plot_MDS_bray_psO_jki_seq1_RP_filt_sqr_rotation<-plot_ordination(psO_jki_seq1_RP
   scale_color_manual(values = c("#196418", "#B1AD31"))
 plot_MDS_bray_psO_jki_seq1_RP_filt_sqr_rotation
 
-ggsave("plot_MDS_bray_psO_jki_seq1_RP_filt_sqr_rotation.png", path = "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Ordination_jki_seq1/", width = 10, height = 10, units = "cm", dpi = 300, device = "png")
+ggsave("plot_MDS_bray_psO_jki_seq1_RP_filt_sqr_rotation.png", path = "~/path/Ordination_jki_seq1/", width = 10, height = 10, units = "cm", dpi = 300, device = "png")
 
 ####################################### STATISTICS
 #Microhabitat
@@ -243,15 +243,15 @@ psO_jki_seq1_RP_filt_meta <- meta(psO_jki_seq1_RP_filt)
 ##Permanova using adonis function from vegan and print p value
 Permanova_psO_jki_seq1_RA_filt_rotation <- adonis2(t(psO_jki_seq1_RA_filt_sqr_abundances) ~ Rotation + Layer, data = psO_jki_seq1_RA_filt_meta, permutations = 10000, method = "bray")
 Permanova_psO_jki_seq1_RA_filt_rotation
-write.csv(Permanova_psO_jki_seq1_RA_filt_rotation, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RA_filt_rotation.csv")
+write.csv(Permanova_psO_jki_seq1_RA_filt_rotation, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RA_filt_rotation.csv")
 
 Permanova_psO_jki_seq1_RH_filt_rotation <- adonis2(t(psO_jki_seq1_RH_filt_sqr_abundances) ~ Rotation + Layer, data = psO_jki_seq1_RH_filt_meta, permutations = 10000, method = "bray")
 Permanova_psO_jki_seq1_RH_filt_rotation
-write.csv(Permanova_psO_jki_seq1_RH_filt_rotation, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RH_filt_rotation.csv")
+write.csv(Permanova_psO_jki_seq1_RH_filt_rotation, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RH_filt_rotation.csv")
 
 Permanova_psO_jki_seq1_RP_filt_rotation <- adonis2(t(psO_jki_seq1_RP_filt_sqr_abundances) ~ Rotation + Layer, data = psO_jki_seq1_RP_filt_meta, permutations = 10000, method = "bray")
 Permanova_psO_jki_seq1_RP_filt_rotation
-write.csv(Permanova_psO_jki_seq1_RP_filt_rotation, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RP_filt_rotation.csv")
+write.csv(Permanova_psO_jki_seq1_RP_filt_rotation, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RP_filt_rotation.csv")
 
 
 ##Permanova using adonis function from vegan and print p value
@@ -260,49 +260,49 @@ write.csv(Permanova_psO_jki_seq1_RP_filt_rotation, "~/Documents/R_analysis/jki_s
 set.seed(2022)
 Permanova_psO_jki_seq1_RA_filt_model <- adonis2(t(psO_jki_seq1_RA_filt_sqr_abundances) ~Rotation + Layer, data = psO_jki_seq1_RA_filt_meta, permutations = 10000, method = "bray", by = NULL)
 Permanova_psO_jki_seq1_RA_filt_model
-write.csv(Permanova_psO_jki_seq1_RA_filt_model, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RA_filt_model.csv")
+write.csv(Permanova_psO_jki_seq1_RA_filt_model, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RA_filt_model.csv")
 
 set.seed(2022)
 Permanova_psO_jki_seq1_RH_filt_model <- adonis2(t(psO_jki_seq1_RH_filt_sqr_abundances) ~Rotation + Layer, data = psO_jki_seq1_RH_filt_meta, permutations = 10000, method = "bray", by = NULL)
 Permanova_psO_jki_seq1_RH_filt_model
-write.csv(Permanova_psO_jki_seq1_RH_filt_model, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RH_filt_model.csv")
+write.csv(Permanova_psO_jki_seq1_RH_filt_model, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RH_filt_model.csv")
 
 set.seed(2022)
 Permanova_psO_jki_seq1_RP_filt_model <- adonis2(t(psO_jki_seq1_RP_filt_sqr_abundances) ~Rotation + Layer, data = psO_jki_seq1_RP_filt_meta, permutations = 10000, method = "bray", by = NULL)
 Permanova_psO_jki_seq1_RP_filt_model
-write.csv(Permanova_psO_jki_seq1_RP_filt_model, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RP_filt_model.csv")
+write.csv(Permanova_psO_jki_seq1_RP_filt_model, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RP_filt_model.csv")
 
 #by terms (it is default)
 set.seed(2022)
 Permanova_psO_jki_seq1_RA_filt_byterm <- adonis2(t(psO_jki_seq1_RA_filt_sqr_abundances) ~Rotation + Layer, data = psO_jki_seq1_RA_filt_meta, permutations = 10000, method = "bray", by = "terms")
 Permanova_psO_jki_seq1_RA_filt_byterm
-write.csv(Permanova_psO_jki_seq1_RA_filt_byterm, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RA_filt_byterm.csv")
+write.csv(Permanova_psO_jki_seq1_RA_filt_byterm, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RA_filt_byterm.csv")
 
 set.seed(2022)
 Permanova_psO_jki_seq1_RH_filt_byterm <- adonis2(t(psO_jki_seq1_RH_filt_sqr_abundances) ~Rotation + Layer, data = psO_jki_seq1_RH_filt_meta, permutations = 10000, method = "bray", by = "terms")
 Permanova_psO_jki_seq1_RH_filt_byterm
-write.csv(Permanova_psO_jki_seq1_RH_filt_byterm, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RH_filt_byterm.csv")
+write.csv(Permanova_psO_jki_seq1_RH_filt_byterm, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RH_filt_byterm.csv")
 
 set.seed(2022)
 Permanova_psO_jki_seq1_RP_filt_byterm <- adonis2(t(psO_jki_seq1_RP_filt_sqr_abundances) ~Rotation + Layer, data = psO_jki_seq1_RP_filt_meta, permutations = 10000, method = "bray", by = "terms")
 Permanova_psO_jki_seq1_RP_filt_byterm
-write.csv(Permanova_psO_jki_seq1_RP_filt_byterm, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RP_filt_byterm.csv")
+write.csv(Permanova_psO_jki_seq1_RP_filt_byterm, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RP_filt_byterm.csv")
 
 #by margin
 set.seed(2022)
 Permanova_psO_jki_seq1_RA_filt_bymargin <- adonis2(t(psO_jki_seq1_RA_filt_sqr_abundances) ~Rotation : Layer, data = psO_jki_seq1_RA_filt_meta, permutations = 10000, method = "bray", by = "margin")
 Permanova_psO_jki_seq1_RA_filt_bymargin
-write.csv(Permanova_psO_jki_seq1_RA_filt_bymargin, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RA_filt_bymargin.csv")
+write.csv(Permanova_psO_jki_seq1_RA_filt_bymargin, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RA_filt_bymargin.csv")
 
 set.seed(2022)
 Permanova_psO_jki_seq1_RH_filt_bymargin <- adonis2(t(psO_jki_seq1_RH_filt_sqr_abundances) ~Rotation : Layer, data = psO_jki_seq1_RH_filt_meta, permutations = 10000, method = "bray",  by = "margin")
 Permanova_psO_jki_seq1_RH_filt_bymargin
-write.csv(Permanova_psO_jki_seq1_RH_filt_bymargin, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RH_filt_bymargin.csv")
+write.csv(Permanova_psO_jki_seq1_RH_filt_bymargin, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RH_filt_bymargin.csv")
 
 set.seed(2022)
 Permanova_psO_jki_seq1_RP_filt_bymargin <- adonis2(t(psO_jki_seq1_RP_filt_sqr_abundances) ~Rotation : Layer, data = psO_jki_seq1_RP_filt_meta, permutations = 10000, method = "bray",  by = "margin")
 Permanova_psO_jki_seq1_RP_filt_bymargin
-write.csv(Permanova_psO_jki_seq1_RP_filt_bymargin, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/Permanova_psO_jki_seq1_RP_filt_bymargin.csv")
+write.csv(Permanova_psO_jki_seq1_RP_filt_bymargin, "~/path/Tables_jki_seq1/Permanova_psO_jki_seq1_RP_filt_bymargin.csv")
 
 
 #### ANOSIM
