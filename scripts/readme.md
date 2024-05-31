@@ -42,6 +42,8 @@ Database used: [SILVA 138 SSU](https://www.arb-silva.de/documentation/release-13
 ```
 out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, compress = TRUE, truncQ = 2, trimLeft=c(17,20), maxN=0, maxEE=c(2,2), rm.phix=TRUE, matchIDs = TRUE, multithread=TRUE)
 ```
+Total of samples = 120\
+Total of reads (nonchim) = 8,591,570
 
 ### 2. Creating phyloseq object
 This script creates a phyloseq object based on these files:
@@ -51,28 +53,60 @@ This script creates a phyloseq object based on these files:
 - jki_seq1_seqs.xlsx
 - jki_seq1_taxa.xlsx
 
+Initial number of samples = 120 (20,065 ASVs in WR, 17,947 ASVs in WM)
+
 ### 3. Rename NA
 This script replaces NA for the latest taxonomy found for an ASV.\
-Source = joey711/phyloseq#850
+Source = https://github.com/joey711/phyloseq/issues/850
 
 ### 4. Clean dataset
+Initial number of samples = 120 (20,065 ASVs in WR, 17,947 ASVs in WM)
+
 This script removes unwanted taxonomic groups from the dataset.
 - Root NAs (Domain, Phylum)
-- Eukaryotes (Domain)
-- Chloroplasts (Order)
-- Mitochondria (Family)
+- Eukaryotes (Domain) (489 ASVs removed)
+- Chloroplasts (Order) (116 ASVs removed)
+- Mitochondria (Family) (42 ASVs removed)
+
+Total of samples = 120 
 
 ### 5. Data selection
-This script selects a group of samples to be analyzed separately.
+Based on the rarefied data, this script group taxa by desired rank, selects a group of samples to be analyzed separately and filter them to remover zeros.
+
+Samples were grouped by:
+Rotations (WR and WM)
+  - WR = 38688 ASVs / 60 samples / 1773 Annotations
+  - WM = 37063 ASVs / 60 samples / 1675 Annotations
+
+Microhabitats (RA, RH, and RP)
+  - RA = 31505 ASVs / 40 samples / 1773 Annotations
+  - RH = 33474 ASVs / 40 samples / 1675 Annotations
+  - RP = 23160 ASVs / 40 samples / 1521 Annotations
 
 ### 6. Rarefaction
-This script performs rarefaction based on the minimum sequences. See Schloss (2024).
+This script performs rarefaction based on the minimum sequences. 
+
+12815 ASVs removed after rarefaction.\
+Final = 14438 sequences
 
 ### 7. Alpha diversity
 This script calculates alpha diversity based on the rarefied data.
 
 ### 8. Ordination 
-This script creates MDS plots and calculates PERMANOVA and ANOSIM based on the rarefied data.
+This script creates MDS plots and calculates PERMANOVA and ANOSIM based on the rarefied data. Square root was applied (*hellinger*).\
+
+#### anosim
+Permutation: free
+Number of permutations: 10000
+
+Rotation: ANOSIM statistic R: 0.1342 
+- Significance: 9.999e-05 
+
+Microhabitat: ANOSIM statistic R: 0.3127 
+- Significance: 0.0001 
+
+Layer: ANOSIM statistic R: 0.3393 
+- Significance: 0.001 
 
 ### 9. DESeq2
 Based on the rarefied data, this script performs differential abundance (DA) between two groups.
