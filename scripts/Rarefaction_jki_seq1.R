@@ -29,7 +29,7 @@ head(psO_jki_seq1_rarefied.meta.rotation)
 
 #Create and transpose matrix to make x axis for samples
 df_psO_jki_seq1_rarefied <- data.frame(otu_table(psO_jki_seq1_rarefied))
-#write.csv(df_psO_jki_seq1_rarefied, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1_rarefied.csv")
+#write.csv(df_psO_jki_seq1_rarefied, "~/path/Tables_jki_seq1/df_psO_jki_seq1_rarefied.csv")
 
 df_psO_jki_seq1_rarefied_t2 <- t(df_psO_jki_seq1_rarefied)
 
@@ -54,7 +54,7 @@ colour[which(ASVs_rarefied_ed$Rotation=="WM")] = "#196418"
 dim(ASVs_rarefied_ed)
 
 #plot
-tiff("~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/rarecurve_jki_seq1_rarefied.tiff", units="cm", width=12, height=12, res=300)
+tiff("~/path/Alpha_div_jki_seq1/rarecurve_jki_seq1_rarefied.tiff", units="cm", width=12, height=12, res=300)
 rarecurve(ASVs_rarefied_ed [,2:27093], step=100, label=FALSE, col=colour, main="", xlab = "Reads", ylab = "ASVs")     #Package VEGAN
 legend(legend=c("WR", "WM"),
        "bottomright", 
@@ -79,7 +79,7 @@ dev.off()
 # 
 # #Create and transpose matrix to make x axis for samples
 # df_psO_jki_seq1 <- data.frame(otu_table(psO_jki_seq1))
-# #write.csv(df_psO_jki_seq1, "~/Documents/R_analysis/jki_seq1/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1.csv")
+# #write.csv(df_psO_jki_seq1, "~/path/output_jki_seq1/Tables_jki_seq1/df_psO_jki_seq1.csv")
 # 
 # df_psO_jki_seq1_t2 <- t(df_psO_jki_seq1)
 # 
@@ -103,7 +103,7 @@ dev.off()
 # dim(ASVs_ed)
 # 
 # #plot
-# tiff("~/Documents/R_analysis/jki_seq1/output_jki_seq1/Alpha_div_jki_seq1/rarecurve_jki_seq1_unrarified.tiff", units="cm", width=12, height=12, res=300)
+# tiff("~/path/Alpha_div_jki_seq1/rarecurve_jki_seq1_unrarified.tiff", units="cm", width=12, height=12, res=300)
 # rarecurve(ASVs_ed [,2:27093], step=100, label=FALSE, col=colour, main="", xlab = "Reads", ylab = "ASVs")     #Package VEGAN
 # legend(legend=c("WR", "WM"),
 #        "bottomright", 
