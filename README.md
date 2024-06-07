@@ -3,9 +3,9 @@
 ### Adriana Giongo, Jessica Arnhold, Dennis Grunwald, Kornelia Smalla and Andrea Braun-Kiewnick
 
 ### How to cite this work
-Giongo A, Arnhold J, Grunwald D, Smalla K and Braun-Kiewnick A (2024) Soil depths and microhabitats shape soil and root-associated bacterial and archaeal communities more than crop rotation in wheat.
+Giongo A, Arnhold J, Grunwald D, Smalla K, and Braun-Kiewnick A (2024) Soil depths and microhabitats shape soil and root-associated bacterial and archaeal communities more than crop rotation in wheat.
 Frontiers in Microbiomes 3: 1335791. \
-DOI: https://10.3389/frmbi.2024.1335791
+DOI: [https://10.3389/frmbi.2024.1335791](https://10.3389/frmbi.2024.1335791)
 
 ### Data
 Unassembled raw amplicon data were deposited in the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject 
