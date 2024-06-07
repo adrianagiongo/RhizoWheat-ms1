@@ -1,4 +1,4 @@
-### Github repository for 
+### GitHub repository for 
 # Soil depths and microhabitats shape soil and root-associated bacterial and archaeal communities more than crop rotation in wheat
 ### Adriana Giongo, Jessica Arnhold, Dennis Grunwald, Kornelia Smalla and Andrea Braun-Kiewnick
 
