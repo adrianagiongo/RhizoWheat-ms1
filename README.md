@@ -26,5 +26,6 @@ https://www.rhizowheat.uni-kiel.de/de \
 https://www.julius-kuehn.de/en/ep
 
 ### Submission
+Submitted to WolV (JKI) on 08.11.2023.\
 Submitted to [Frontiers in Microbiomes](https://www.frontiersin.org/journals/microbiomes) on 02.12.2023.\
 Accepted on 05.02.2024.
