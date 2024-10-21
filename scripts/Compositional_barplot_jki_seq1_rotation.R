@@ -50,7 +50,7 @@ aggregate_rare_taxa <- function (x, level, detection, prevalence, include.lowest
 total_samples_psO_jki_seq2_seq4 <- phyloseq::nsamples(psO_jki_seq2_seq4)
 total_sum_psO_psO_jki_seq2_seq4 = sample_sums(psO_jki_seq2_seq4)
 
-#aggregate based on phylum (detection higher than 40 copies and present in more than 85% of samples)
+#aggregate based on phylum (detection higher than 1000 copies and present in more than 50% of samples (120 samples total))
 psO_jki_seq2_seq4_aggreg_rare_phy <- aggregate_rare_taxa(psO_jki_seq2_seq4, level="Phylum", detection = 1000, prevalence =60/total_samples_psO_jki_seq2_seq4)
 psO_jki_seq2_seq4_aggreg_rare_phy
 
